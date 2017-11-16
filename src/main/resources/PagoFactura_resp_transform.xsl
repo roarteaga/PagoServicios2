@@ -7,10 +7,10 @@
 
 	<xsl:template match="text()|@*" />
 
-	<xsl:template match="//res:getQuoteresponse">
-		<xsl:element name="quot:getQuoteResponse">
-			<xsl:element name="price">
-				<xsl:value-of select="price"></xsl:value-of>
+	<xsl:template match="//res:getPagoresponse">
+		<xsl:element name="quot:getPagoResponse">
+			<xsl:element name="idFactura">
+				<xsl:value-of select="idFactura"></xsl:value-of>
 			</xsl:element>
 		</xsl:element>
 	</xsl:template>
